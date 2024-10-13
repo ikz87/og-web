@@ -15,4 +15,13 @@ const config = {
 	}
 };
 
-export default config;
+
+import { resolve } from 'path';
+
+export default {
+  kit: {
+    alias: {
+      $components: resolve('./src/components')
+    }
+  }
+};

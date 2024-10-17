@@ -40,6 +40,8 @@
 		//toggleSidebar();
 		// ^ Not sure if that's good 
 		setTimeout(() => {
+			hideUnfocusedSections();
+			document.getElementById(section).classList.remove('hidden');
 			window.location.href = "#"+section;
 			triggerAnims(section_div);
 			curtain.classList.add('curtain-open');
@@ -89,12 +91,22 @@
 		"Inicio": "Inicio",
 		"Sobre-nosotros": "Sobre nosotros",
 		"Servicios": "Servicios",
-		"Nuestro-trabajo": "Nuestro trabajo",
+		"Research": "Research",
 		"Galeria": "Galería",
 		"Equipo": "Equipo",
 		"Testimonios": "Testimonios",
 		"Porfolio": "Porfolio",
 		"Contacto": "Contacto",
+	}
+
+	function hideUnfocusedSections () {
+		for (const section in sections) {
+			const section_div = document.getElementById(section);
+			if (!section_div) { continue };
+			if (!section_div.classList.contains('hidden')) {
+				section_div.classList.add('hidden');
+			}
+		}
 	}
 </script>
 
@@ -104,7 +116,7 @@
 	<div id="sidebar" class="sidebar-open sidebar-close translate-x-[-65%] flex flex-cols-2 items-center justify-center my-button h-dvh fixed left-0 min-h-0 z-40 transition duration-200 hover:opacity-100 opacity-40">
 		<div class="hover:blur-none h-dvh text-xs font-bold flex flex-col justify-center bg-black opacity-100 p-4 w-16 md:w-24 text-center items-center min-h-0 border-r-4 border-green-400">
 			<div class="overflow-y-auto h-dvh overflow-x-hidden align-middle box-border p-3 flex flex-col justify-center items-center">
-				{#each ['Inicio', 'Sobre-nosotros', 'Servicios', 'Nuestro-trabajo', 'Galeria', 'Equipo', 'Testimonios', 'Porfolio', 'Contacto'] as name}
+				{#each ['Inicio', 'Sobre-nosotros', 'Servicios', 'Research', 'Galeria', 'Equipo', 'Testimonios', 'Porfolio', 'Contacto'] as name}
 					<button class="my-2 hover:scale-110 my-button flex-col transition hover:bg-green-400 hover:text-black rounded text-white aspect-square w-12 md:w-full flex justify-center text-center items-center p-1" 
 						on:click={() => goToSection(`${name}`)}>
 						{#if name != "Inicio"}

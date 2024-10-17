@@ -9,7 +9,7 @@
 </script>
 <div id="Servicios" class="snap-center snap-always bg-white flex-col flex justify-center items-center h-dvh w-full">
   <!-- Fixed background image -->
-  <div class="fixed top-0 grid grid-cols-3 left-0 h-full w-full">
+  <div class="fixed top-0 grid grid-cols-3 bg-black to-fade-in left-0 h-full w-full">
     <div class="col-span-1"/>
     <img src={background} class="to-slide-right h-full w-full object-cover col-span-2 scale-110"/>
   </div>
@@ -29,7 +29,7 @@
             <img src={X} class="h-6 aspect-square p-1 right-0"/>
           </button>
         </div>
-        <div class="text-xl gap-16 grid grid-rows-2 m-8 mt-2">
+        <div class="text-xl gap-16 grid grid-rows-2 m-10 mt-2">
           <div class="w-full h-full">
             <p class="font-bold text-center pb-2"> Asesoramiento en agricultura sostenible y prácticas amigables con el medio ambiente </p>
             <p class="text-justify">
@@ -76,10 +76,13 @@
           • Programación de riego
         </div>
         <div class="text-xl text-white w-full px-32 text-left to-slide-right">
-          • Desarrollo de productos (performance)
+          • Desarrollo de productos (performance
         </div>
         <div class="text-xl text-white w-full px-32 text-left to-slide-right">
           • Uso de bioestimulantes y fertilización follar mediante la tecnología I-DRIS
+        </div>
+        <div class="text-xl text-white w-full px-32 text-left to-slide-right">
+          • Entrenamiento a equipos con mentalidad ágil
         </div>
         <div role="button" class="text-xl hover:text-green-400 underline text-white w-full px-32 text-left to-slide-right"
           on:click={() => { showModal("Servicios") } }

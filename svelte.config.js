@@ -21,7 +21,8 @@ import { resolve } from 'path';
 export default {
   kit: {
     alias: {
-      $components: resolve('./src/components')
+      $components: resolve('./src/components'), 
+      $static: resolve('.static')
     }
   }
 };

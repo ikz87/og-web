@@ -14,7 +14,9 @@
         <!-- Content Block: "¿Quiénes somos?" -->
         <div class="flex flex-row items-center justify-center">
           <div class="flex flex-col items-center justify-center to-slide-down">
-            <div class="text-green-400 pb-10 font-bold flex items-center justify-center text-justify md:text-4xl text-2xl mb-[-10px]">
+            <div class="text-green-400 pb-10 font-bold flex items-center justify-center text-justify md:text-4xl text-2xl mb-[-10px]"
+              style="text-shadow: black 1px 1px 6px;"
+            >
               ¿Quiénes somos?
             </div>
             <div class="hidden text-black font-bold flex items-center justify-center text-justify md:text-2xl text-base mb-[-10px]">

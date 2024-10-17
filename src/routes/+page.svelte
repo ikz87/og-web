@@ -2,6 +2,8 @@
 	import Home from './Home.svelte';
 	import About from './About.svelte';
 	import Services from './Services.svelte';
+	import Research from './Research.svelte';
+	import Gallery from './Gallery.svelte';
 
 	function showModal(section) {
 		const modal = document.getElementById("Modal-"+section);
@@ -32,4 +34,6 @@
 	<Home/>
 	<About/>
 	<Services {hideModal} {showModal}/>
+	<Research/>
+	<Gallery/>
 </section>

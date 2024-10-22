@@ -29,11 +29,11 @@
             <img src={X} class="h-6 aspect-square p-1 right-0"/>
           </button>
         </div>
-        <div class="text-xl gap-16 grid grid-rows-2 m-10 mt-2">
+        <div class="text-xl gap-10 flex flex-col items-center justify-center m-10 mt-2">
           <div class="w-full h-full">
             <p class="font-bold text-center pb-2"> Asesoramiento en agricultura sostenible y prácticas amigables con el medio ambiente </p>
             <p class="text-justify">
-              El asesoramiento en agricultura sostenible y prácticas amigables con el medio ambiente es un servicio especializado que busca promover un uso responsable y consciente de los recursos naturales en el sector agrícola. Este tipo de asesoría se enfoca en implementar técnicas y métodos de cultivo que sean respetuosos con el medio ambiente, reduciendo al mínimo el impacto negativo en los ecosistemas y fomentando...
+              El asesoramiento en agricultura sostenible y prácticas amigables con el medio ambiente es un servicio especializado que busca promover un uso responsable y consciente de los recursos naturales en el sector agrícola. Este tipo de asesoría se enfoca en implementar técnicas y métodos de cultivo que sean respetuosos con el medio ambiente, reduciendo al mínimo el impacto negativo en los ecosistemas y fomentando una producción más equilibrada y eficiente a largo plazo.
             </p>
           </div>
           <div class="w-full h-full">
@@ -41,7 +41,7 @@
               Planificación y diseño de sistemas de riego eficientes y sostenibles
             </p>
             <p class="text-justify">
-              La planificación y diseño de sistemas de riego eficientes y sostenibles es un proceso esencial en la agricultura moderna, ya que permite optimizar el uso del agua y garantizar su disponibilidad a largo plazo. Este proceso implica la evaluación de las necesidades hídricas de los cultivos, la elección adecuada de los métodos y tecnologías de riego, y la implementación de medidas de conservación y gestión del...
+              La planificación y diseño de sistemas de riego eficientes y sostenibles es un proceso esencial en la agricultura moderna, ya que permite optimizar el uso del agua y garantizar su disponibilidad a largo plazo. Este proceso implica la evaluación de las necesidades hídricas de los cultivos, la elección adecuada de los métodos y tecnologías de riego, y la implementación de medidas de conservación y gestión del agua que promuevan una mayor productividad. Con un enfoque en la sostenibilidad, estos sistemas permiten a los agricultores adaptarse mejor a los desafíos climáticos y mejorar la resiliencia de sus cosechas.
             </p>
           </div>
         </div>
@@ -76,7 +76,7 @@
           • Programación de riego
         </div>
         <div class="text-xl text-white w-full px-32 text-left to-slide-right">
-          • Desarrollo de productos (performance
+          • Desarrollo de productos (performance)
         </div>
         <div class="text-xl text-white w-full px-32 text-left to-slide-right">
           • Uso de bioestimulantes y fertilización follar mediante la tecnología I-DRIS

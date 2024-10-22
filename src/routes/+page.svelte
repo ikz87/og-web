@@ -4,6 +4,8 @@
 	import Services from './Services.svelte';
 	import Research from './Research.svelte';
 	import Gallery from './Gallery.svelte';
+	import Testimonies from './Testimonies.svelte';
+	import Contact from './Contact.svelte';
 
 	function showModal(section) {
 		const modal = document.getElementById("Modal-"+section);
@@ -26,7 +28,7 @@
 </script>
 
 <svelte:head>
-	<title>Optigrow</title>
+	<title>Opti-Grow</title>
 	<meta name="description" content="Optigrow consultorias" />
 </svelte:head>
 
@@ -36,4 +38,6 @@
 	<Services {hideModal} {showModal}/>
 	<Research/>
 	<Gallery/>
+	<Testimonies/>
+	<Contact/>
 </section>

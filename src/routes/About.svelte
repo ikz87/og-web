@@ -1,6 +1,8 @@
 <script>
 	import logo from '$lib/images/logo.jpeg';
 	import background from '$lib/images/crops-bg.png';
+    import LeafGreenR from '$lib/images/leaf-green-r.png';
+    import LeafGreenL from '$lib/images/leaf-green-l.png';
 </script>
 <div id="Sobre-nosotros" class="snap-center snap-always bg-white flex-col flex justify-center items-center h-dvh w-full">
   <!-- Fixed background image -->
@@ -51,6 +53,8 @@
     </div>
     
     <div class="box-shadow md:p-10 md:px-16 rounded-xl md:mx-32 md:mt-4 p-4 font-semibold mb-0 m-4 bg-black text-white md:text-xl text-sm text-justify to-slide-up">
+      <img src={LeafGreenL} class="to-slide-up absolute -top-2 -left-2 h-16"/>
+      <img src={LeafGreenR} class="to-slide-up absolute -bottom-2 -right-2 h-16"/>
       <p>
         Con más de cinco décadas dedicadas a la agricultura sostenible, lideramos Opti-Grow Consulting Group 
         con un enfoque firme en la innovación disruptiva y la eficiencia agrícola.

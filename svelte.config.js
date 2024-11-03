@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -23,6 +23,9 @@ export default {
     alias: {
       $components: resolve('./src/components'), 
       $static: resolve('.static')
-    }
+    },
+  adapter: adapter({
+	  fallback: 'index.html'  // Redirects all routes to index.html for single-page apps
+  })
   }
 };

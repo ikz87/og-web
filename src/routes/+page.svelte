@@ -6,6 +6,7 @@
 	import Gallery from './Gallery.svelte';
 	import Testimonies from './Testimonies.svelte';
 	import Contact from './Contact.svelte';
+	import Resources from './Resources.svelte';
 
 	function showModal(section) {
 		const modal = document.getElementById("Modal-"+section);
@@ -40,4 +41,5 @@
 	<Gallery/>
 	<Testimonies/>
 	<Contact/>
+	<Resources/>
 </section>

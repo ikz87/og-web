@@ -35,15 +35,15 @@
         
         <!-- Main Paragraph -->
         <div class="flex flex-row items-center w-full justify-center pb-4 place-items-center">
-          <div class="flex flex-col pr-4 items-center justify-center">
-            <img src="images/ricardo.webp" class="box-shadow border-green-400 border-8 to-slide-left mt-4 md:h-64 h-32 aspect-square rounded-xl border-black "/>
-            <div class="to-slide-left md:text-base text-xs md:p-4 p-2 rounded-b-xl box-shadow bg-green-400 text-center justify-center text-justify font-semibold">
+          <div class="flex flex-col pr-4 items-center text-green-400 justify-center">
+            <img src="images/ricardo.webp" class="box-shadow border-green-400 md:border-4 border-2 to-slide-left mt-4 md:h-64 h-32 aspect-square rounded-xl border-black "/>
+            <div class="to-slide-left text-green-400 bg-black md:border-4 md:border-t-0 border-2 border-t-0 border-green-400 md:text-base text-xs md:p-4 p-2 rounded-b-xl box-shadow text-center justify-center text-justify font-semibold">
               Ricardo Navarro
             </div>
           </div>
           <div class="flex flex-col pl-4 items-center justify-center">
-            <img src="/images/leonel.webp" class="box-shadow border-green-400 border-8 to-slide-right mt-4 md:h-64 h-32 aspect-square rounded-xl border-black"/>
-            <div class="to-slide-right md:text-base text-xs md:p-4 p-2 rounded-b-xl box-shadow bg-green-400 text-center justify-center text-justify font-semibold">
+            <img src="/images/leonel.webp" class="box-shadow border-green-400 md:border-4 border-2 to-slide-right mt-4 md:h-64 h-32 aspect-square rounded-xl border-black"/>
+            <div class="to-slide-right text-green-400 bg-black md:border-4 md:border-t-0 border-2 border-t-0 border-green-400 md:text-base text-xs md:p-4 p-2 rounded-b-xl box-shadow text-center justify-center text-justify font-semibold">
               Leonel Espinoza
             </div>
           </div>
@@ -53,8 +53,8 @@
     </div>
     
     <div class="box-shadow md:p-10 md:px-16 rounded-xl md:mx-32 md:mt-4 p-4 font-semibold mb-0 m-4 bg-black text-white md:text-xl text-sm text-justify to-slide-up">
-      <img src={LeafGreenL} class="to-slide-up absolute -top-2 -left-2 h-16"/>
-      <img src={LeafGreenR} class="to-slide-up absolute -bottom-2 -right-2 h-16"/>
+      <img src={LeafGreenL} class="to-slide-up absolute -top-2 -left-2 lg:h-16 h-8"/>
+      <img src={LeafGreenR} class="to-slide-up absolute -bottom-2 -right-2 lg:h-16 h-8"/>
       <p>
         Con más de cinco décadas dedicadas a la agricultura sostenible, lideramos Opti-Grow Consulting Group 
         con un enfoque firme en la innovación disruptiva y la eficiencia agrícola.

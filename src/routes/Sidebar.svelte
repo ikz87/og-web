@@ -3,15 +3,18 @@
 	import icon_white from '$lib/images/icon-white.png';
 	import icon_green from '$lib/images/icon-green.png';
 	import icon_black from '$lib/images/icon-black.png';
-	import { page } from '$app/stores';
-	import { flip } from 'svelte/animate';
-	import { quintOut } from 'svelte/easing';
 	import CaretLeftFill from "svelte-bootstrap-icons/lib/CaretLeftFill.svelte";
 	import CaretRightFill from "svelte-bootstrap-icons/lib/CaretRightFill.svelte";
 	import github from '$lib/images/github.svg';
 
 	export let hideModal;
 	export let showModal;
+
+	let isTouchDevice = false;
+
+	if (typeof window !== "undefined") {
+		isTouchDevice = 'maxTouchPoints' in navigator && navigator.maxTouchPoints > 0;
+	}
 
 	let is_sidebar_open = true;
 	let curr_section = "Inicio";
@@ -37,7 +40,9 @@
 		const section_div = document.getElementById(section);
 		curtain.classList.remove('curtain-open');
 		curtain.classList.add('curtain-close');
-		//toggleSidebar();
+		if (isTouchDevice) {
+			toggleSidebar();
+		}
 		// ^ Not sure if that's good 
 		setTimeout(() => {
 			hideUnfocusedSections();
@@ -93,7 +98,7 @@
 		"Servicios": "Servicios",
 		"Research": "Research",
 		"Galeria": "Galería",
-		"Equipo": "Equipo",
+		"Recursos": "Recursos",
 		"Testimonios": "Testimonios",
 		"Porfolio": "Porfolio",
 		"Contacto": "Contacto",
@@ -116,8 +121,8 @@
 	<div id="sidebar" class="sidebar-open sidebar-close translate-x-[-65%] flex flex-cols-2 items-center justify-center my-button h-dvh fixed left-0 min-h-0 z-40 transition duration-200 hover:opacity-100 opacity-40">
 		<div class="hover:blur-none h-dvh text-xs font-bold flex flex-col justify-center bg-black opacity-100 p-4 w-16 md:w-24 text-center items-center min-h-0 border-r-4 border-green-400">
 			<div class="overflow-y-auto h-dvh overflow-x-hidden align-middle box-border p-3 flex flex-col justify-center items-center">
-				{#each ['Inicio', 'Sobre-nosotros', 'Servicios', 'Research', 'Galeria', 'Testimonios', 'Contacto'] as name}
-					<button class="my-2 hover:scale-110 my-button flex-col transition hover:bg-green-400 hover:text-black rounded text-white aspect-square w-12 md:w-full flex justify-center text-center items-center p-1" 
+				{#each ['Inicio', 'Sobre-nosotros', 'Servicios', 'Research', 'Recursos', 'Galeria', 'Testimonios', 'Contacto'] as name}
+					<button class="relative my-2 hover:scale-110 my-button flex-col transition hover:bg-green-400 hover:text-black rounded text-white aspect-square w-12 md:w-full flex justify-center text-center items-center p-1" 
 						on:click={() => goToSection(`${name}`)}>
 						{#if name != "Inicio"}
 							{#if name === curr_section}
